@@ -17,7 +17,12 @@ setup(
     license="GPLv3",
     packages=["pyetrade"],
     package_dir={"pyetrade": "pyetrade"},
-    install_requires=req,
+    install_requires=[
+        "requests",
+        "requests_oauthlib",
+        "xmltodict",
+        "jxmlease",
+    ],
     platforms=["any"],
     keywords=["etrade", "pyetrade", "stocks"],
     classifiers=[
